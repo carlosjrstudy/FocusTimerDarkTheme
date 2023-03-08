@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Focus Timer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+      <button class="darkMode" id="darkMode">
+        <img src="assets/icon.svg" alt="sun" id="sun">
+        <img src="assets/lua.svg" alt="lua" id="lua" hidden>
+      </button>
+
+    <div class="timer" id="timer">
+      <div class="clock" id="clock">
+        <span class="hour" id="hours">25</span>
+        <span>:</span>
+        <span class="minutes" id="minutes">00</span>
+      </div>
+      <div class="options">
+        <img src="assets/play.svg" alt="play button" id="play">
+        <img src="assets/stop.svg" alt="play button" id="stop">
+        <img src="assets/plus.svg" alt="play button" id="plus">
+        <img src="assets/minus.svg" alt="play button" id="minus">
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="line">
+        <div class="card" id="cardTree">
+          <img src="assets/tree.svg" alt="florest sound" id="tree">
+          <input type="range" name="treeVolume" id="treeVolume" min="0" max="10" value="5" />
+        </div>
+        <div class="card" id="cardCloud">
+          <img src="assets/clound.svg" alt="cloud sound" id="cloud">
+          <input type="range" name="cloudVolume" id="cloudVolume" min="0" max="10" value="5" />
+        </div>
+      </div>
+      <div class="line">
+        <div class="card" id="cardStore">
+          <img src="assets/store.svg" alt="store sound" id="store">
+          <input type="range" name="storeVolume" id="storeVolume" min="0" max="10" value="5" />
+        </div>
+        <div class="card" id="cardFire">
+          <img src="assets/fire.svg" alt="fire sound" id="fire">
+          <input type="range" name="fireVolume" id="fireVolume" min="0" max="10" value="5" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 19.2rem;
+}
+
+.darkMode {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+}
+
+.darkMode > img {
+  position: absolute;
+  right: 4rem;
+}
+
+.timer {
+  width: 32.1rem;
+  height: 21.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.clock {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12.6rem;
+  /* line-height: 14.8rem; */
+  height: 11.7rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+}
+
+.options {
+  height: 4.8rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.options > img {
+  height: 4.8rem;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 999px;
+  offset: 1rem;
+}
+
+.options > img:hover {
+  cursor: pointer;
+}
+
+.cards {
+  width: 30.8rem;
+  height: 33.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 13.8rem;
+  height: 15.2rem;
+  background-color: #E1E1E6;
+  border-radius: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card > img {
+  height: 5.6rem;
+}
+
+.card > input {
+  width: 70%;
+}
+
+.card > img:hover {
+  cursor: pointer;
+}
+
+/* ----------------- */
+
+.active {
+  background-color: #02799D;
+}
